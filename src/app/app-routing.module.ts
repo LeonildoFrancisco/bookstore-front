@@ -4,12 +4,14 @@ import { CategoriaCreateComponent } from "./components/views/categoria/categoria
 import { CategoriaReadComponent } from "./components/views/categoria/categoria-read/categoria-read.component";
 import { HomeComponent } from "./components/views/home/home.component";
 import { CategoriaDeleteComponent } from "./components/views/categoria/categoria-delete/categoria-delete.component";
+import { CategoriaUpdateComponent } from "./components/views/categoria/categoria-update/categoria-update.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: 'categorias', component: CategoriaReadComponent },
   { path:'categorias/create', component: CategoriaCreateComponent},
   { path:'categorias/delete/:id', component: CategoriaDeleteComponent},
+  { path:'categorias/update/:id', component: CategoriaUpdateComponent},
 ];
 
 @NgModule({
